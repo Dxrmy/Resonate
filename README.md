@@ -1,16 +1,32 @@
-# React + Vite
+<div align="center">
+  <img src="icon.png" alt="Resonate Icon" width="128" />
+  <h1>Resonate</h1>
+  <p>
+    <strong>Intelligent Multi-Modal Data Correlation & Insight Engine</strong>
+  </p>
+  
+  ![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)
+  ![Electron](https://img.shields.io/badge/Electron-33-47848F?style=flat&logo=electron)
+  ![SQLite](https://img.shields.io/badge/SQLite-3-003B57?style=flat&logo=sqlite)
+  ![Status](https://img.shields.io/badge/Status-Active-success)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <br />
+</div>
 
-Currently, two official plugins are available:
+**Resonate** is a sophisticated desktop application designed to bridge the gap between raw data and actionable intelligence. Built on a high-performance Electron foundation with a React-driven interface, it allows users to journal their daily activities, track complex variables, and use local LLM acceleration to discover hidden correlations in their lives.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- 📓 **Unified Journaling**: A seamless, reactive workspace for logging thoughts, metrics, and events.
+- 🧠 **Correlation Insights**: Automated analysis to find relationships between disparate data points (e.g., sleep vs. productivity).
+- 💬 **Local AI Chat**: Interact with your data using `@mlc-ai/web-llm` for private, on-device intelligence.
+- 📊 **Dynamic Visualization**: Beautiful, interactive charts powered by Recharts to visualize trends over time.
+- 🔒 **Privacy First**: All data is stored locally in an encrypted-ready SQLite database. No cloud, no tracking.
 
-## React Compiler
+## Tech Stack
+- **Frontend**: React 19, Material UI v7, Framer Motion
+- **Runtime**: Electron 33, Vite 7
+- **Intelligence**: Web-LLM (Local LLM Execution)
+- **Database**: SQLite3
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📄 License
+All rights reserved. Dxrmy Ecosystem.
