@@ -1,0 +1,50 @@
+{
+  "name": "resonate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "dist": "vite build && electron-builder",
+    "rebuild": "electron-builder install-app-deps",
+    "electron:start": "cross-env VITE_DEV_SERVER_URL=http://localhost:5173 electron .",
+    "electron": "concurrently \"cross-env BROWSER=none npm run dev\" \"wait-on http://localhost:5173 && npm run electron:start\""
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mlc-ai/web-llm": "^0.2.80",
+    "@mui/icons-material": "^7.3.7",
+    "@mui/material": "^7.3.7",
+    "bindings": "^1.5.0",
+    "framer-motion": "^12.26.2",
+    "fs-extra": "^11.3.3",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.12.0",
+    "recharts": "^3.6.0",
+    "sqlite3": "^5.1.7",
+    "zustand": "^5.0.10"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^33.0.0",
+    "electron-builder": "^26.4.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "^7.2.4",
+    "wait-on": "^9.0.3"
+  }
+}
